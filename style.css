@@ -1,0 +1,704 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #3A3845;
+}
+
+h2{
+    font-size: 45px;
+    line-height: 54px;
+    color: #3A3845;
+}
+
+h4{
+    font-size: 20px;
+    color: #3A3845;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color:white;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+/* Header */
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background-color: #826F66;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar.active{
+    right: 0px;
+}
+
+#navbar li{
+    position: relative;
+    list-style: none;
+    padding: 0 20px;
+}
+
+/* remove the underline: */
+#navbar li a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #3A3845;
+    transition: 0.2s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #F7CCAC;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #F7CCAC;
+    position: absolute;
+    bottom: -5px;
+    left: 20px;
+}
+
+/* HOME */
+#first{
+    background-image: url("img/car1.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 75% right 0;
+    padding: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#first h1{
+    color: aliceblue;
+}
+
+#first button{
+    font-size: 24px;
+    font-weight: bold;
+    background-color: transparent;
+    color: #F7CCAC;
+    border: 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#first button:hover{
+    font-size: 24px;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    border: 0;
+}
+#second{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#second .box1{
+    width: 450px;
+    text-align: center;
+    padding: 15px 15px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    margin: 20px 0;
+    transition: 0.3s ease;
+}
+
+#second .box1:hover{
+    border: 3px solid #C69B7B;
+}
+
+#second .box1 img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #3A3845;
+    background-position: 20% 30%;
+}
+
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700px;
+    color: #F7CCAC;
+}
+
+#newsletter p{
+    font-weight: 700px;
+    color: white;
+}
+
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+
+#newsletter input{
+    height: 30px;
+    padding: 0 20px;
+    font-size: 14px;
+    width: 80%;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button{
+    height: 30px;
+    padding: 0 20px;
+    background-color: #826F66;
+    color: white;
+    border-color: transparent;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #C69B7B;
+}
+
+footer p{
+    font-size: 15px;
+}
+
+footer .follow{
+    margin-top: 20px;
+}
+
+footer .icon{
+    margin-bottom: 30px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+}
+/* SHOP NOW */
+
+#collection-top{
+    background-image: url("img/car2.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 50% right 0;
+    padding: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#collection-top h1{
+    font-size: 100px;
+    font-weight: 700;
+    color: #F7CCAC;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+
+}
+
+#collection-top h2{
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#collection-top p{
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#classA{
+    background-image: url("img/carA.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 50% right 0;
+    padding: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#classA h1{
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#classA p{
+    width: 500px;
+    font-weight: 500;
+    color: white;
+    margin-top: 10px;
+}
+
+#classA button{
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #3A3845;
+    color: #F7CCAC;
+    border: 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#classA button:hover{
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #3A3845;
+    color: white;
+    border: 0;
+}
+
+/* --------------------------------------------- */
+
+#classB{
+    background-image: url("img/carB.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 50% right 0;
+    padding: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#classB h1{
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#classB p{
+    width: 500px;
+    font-weight: 500;
+    color: white;
+    margin-top: 10px;
+}
+
+#classB button{
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #3A3845;
+    color: #F7CCAC;
+    border: 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#classB button:hover{
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #3A3845;
+    color: white;
+    border: 0;
+}
+
+/* --------------------------------------------- */
+
+#classC{
+    background-image: url("img/carC.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 50% right 0;
+    padding: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#classC h1{
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#classC pre{
+    width: 500px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#classC button{
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #3A3845;
+    color: #F7CCAC;
+    border: 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#classC button:hover{
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #3A3845;
+    color: white;
+    border: 0;
+}
+
+/* --------------------------------------------- */
+
+#classE{
+    background-image: url("img/carE.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 50% right 0;
+    padding: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#classE h1{
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#classE p{
+    width: 280px;
+    height: 20px;
+    font-weight: 500;
+    background-color: #826F66;
+    color: white;
+    margin-top: 10px;
+}
+
+#classE button{
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #3A3845;
+    color: #F7CCAC;
+    border: 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#classE button:hover{
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #3A3845;
+    color: white;
+    border: 0;
+}
+
+/* --------------------------------------------- */
+
+#classG{
+    background-image: url("img/carG.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 50% right 0;
+    padding: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#classG h1{
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#classG p{
+    width: 500px;
+    height: 20px;
+    font-weight: 500;
+    background-color: transparent;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+#classG button{
+
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #3A3845;
+    color: #F7CCAC;
+    border: 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#classG button:hover{
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #3A3845;
+    color: white;
+    border: 0;
+}
+
+/* --------------------------------------------- */
+
+#classS{
+    background-image: url("img/carS.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 50% right 0;
+    padding: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#classS h1{
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#classS p{
+    width: 500px;
+    height: 20px;
+    font-weight: 500;
+    background-color: transparent;
+    color: white;
+    margin-top: 10px;
+}
+
+#classS button{
+
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #3A3845;
+    color: #F7CCAC;
+    border: 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#classS button:hover{
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #3A3845;
+    color: white;
+    border: 0;
+}
+
+/* --------------------------------------------- */
+
+#exterior{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: black;
+    background-position: 20% 30%;
+}
+
+#exterior h2{
+    font-weight: 600;
+    color: white;
+    margin-top: 20px;    
+}
+
+#exterior p{
+    font-weight: 400;
+    color: white;
+    margin-top: 20px;    
+}
+
+#interior{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: black;
+    background-position: 20% 30%;
+}
+
+#interior h2{
+    text-align: right;
+    font-weight: 600;
+    color: white;
+    margin-top: 20px;    
+}
+
+#interior p{
+    text-align: right;
+    font-weight: 400;
+    color: white;
+    margin-top: 20px;    
+}
+
+#tech{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: black;
+    background-position: 20% 30%;
+}
+
+#tech h2{
+    font-weight: 600;
+    color: white;
+    margin-top: 20px;    
+}
+
+#tech p{
+    font-weight: 400;
+    color: white;
+    margin-top: 20px;    
+}
+
+#form-meow{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#form-meow h2{
+    font-size: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#form-meow form{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#form-meow form input,
+#form-meow form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #826F66;
+}
+
+#form-meow button{
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #826F66;
+    color: #F7CCAC;
+    border: 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#form-meow button:hover{
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #826F66;
+    color: white;
+    border: 0;
+}
+/* ABOUT US */
+
+/* OUR STORE */
+
